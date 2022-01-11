@@ -277,3 +277,14 @@ img{
     border-bottom: 2px solid var(--gray);
     padding: 5px;
 }
+.git-content__element h3{
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+.git-content p{
+    padding: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 700;
+    padding-bottom: 0;
+}
