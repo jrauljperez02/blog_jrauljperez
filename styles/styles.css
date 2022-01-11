@@ -227,12 +227,6 @@ img{
     justify-content: center;
 }
 
-
-
-
-
-
-
 /*Python entry*/
 .python-bg{
     background-image: url(../img/python-header.jpg);
@@ -243,12 +237,10 @@ img{
     border-radius: 10px;
 }
 .python-content{
-    
     background-color: var(--white);
     margin: -25rem auto 0 auto;
     max-width: 85%;
     border-radius: 10px;
-    
 }
 .python-content__element{
     text-align: center;
@@ -262,4 +254,26 @@ img{
     .python-content__element a{
         margin: 300px;
     }
+}
+
+/*GIT PAGES*/
+.git-bg{
+    background-image: url(../img/git/image.png);
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-position: center center;
+}
+
+.git-content{
+    background-color: var(--white);
+    margin: -11rem auto 0 auto;
+    max-width: 85%;
+    border-radius: 10px;
+}
+.git-content__element{
+    text-align: center;
+    border-bottom: 2px solid var(--gray);
+    padding: 5px;
 }
