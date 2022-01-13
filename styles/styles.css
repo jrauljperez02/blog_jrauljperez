@@ -5,6 +5,8 @@
     --white: #ffffff;
     --black:#000000;
     --gray:#e1e1e1;
+    --blue:#236883;
+    --secondBlue:#034574;
 }
 html{
     box-sizing: border-box;
@@ -58,8 +60,121 @@ img{
     border-radius: 10px;
 }
 
-/*Header*/
+/*New nav bar*/
 .header{
+    background-color: var(--blue);
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+}
+.nav-link{
+    color: var(--white);
+    font-weight: bold;
+}
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0px 40px;
+    line-height: 80px;
+}
+
+.nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 50px;
+    width: max-content;
+}
+.nav-menu-link{
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+.nav-menu-link:hover,
+.nav-menu-link-active{
+    background-color:var(--secondBlue);
+    transition: 0.5s;
+}
+
+/*Responsive nav bar*/
+.nav-toggle{
+    color: var(--white);
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+
+    display: none;
+}
+
+@media(max-width:768px){
+    
+    body{
+        padding-top: 70px;
+    }
+
+    .header{
+        background-color: var(--blue);
+        height: 60px;
+        
+    }
+    
+    .logo{
+        font-size: 25px;
+        padding: 0 20px;
+        line-height: 60px;
+    }
+    .nav-menu{
+        flex-direction: column;
+        margin: 0;
+        background-color: #2c3e50;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        align-items: center;
+        padding: 20px 0;
+
+        height: calc(100% - 60px);
+        overflow-y: auto;
+
+        left: 100%;
+        transition: left 1s;
+    }
+    .nav-menu-item{
+        line-height: 70px;
+
+    }
+    
+    .nav-menu-link:hover,
+    .nav-menu-link_active{
+        background-color:none;
+        transition: 0.1s;
+        color:#83c5f7;
+    }
+    .nav-toggle{
+        display: block;
+        cursor:pointer;
+    }
+    .nav-menu_visible{
+        left: 0%;
+    }
+}
+
+/*Header*/
+.header2{
     background-image: url(../img/banner.jpg);
     height: 600px;
     background-size: cover;
@@ -69,11 +184,13 @@ img{
 .header__text{
     text-align: center;
     color: var(--white);
-    margin-top: 50px;
+    margin-top: 0px;
+    padding-top: 120px;
 }
 @media(min-width:768px){
     .header__text{
-        margin-top: 160px;
+        margin-top: 90px;
+        
     }
     .bar{
         padding-top: 30px;

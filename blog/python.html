@@ -6,33 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Python</title>
 
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/normalize.css">
 
     <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/faf0364375.js" crossorigin="anonymous"></script>
+    <script defer src="../scripts.js"></script>
 </head>
 <body>
 
     <header class="header">
-        <div class="container">
-            <div class="bar">
-                <a href="index.html"class="logo">
-                    <h1 class="no-margin text-center logo__name">Blog<span class="logo__bold">DeJRaul</span></h1>
-                </a>
-                <nav class="navigation">
-                    <a href="nosotros.html" class="navigation__link">Acerca de mi</a>
-                    <a href="proyects.html"   class="navigation__link">Proyectos</a>
-                    <a href="contacto.html" class="navigation__link">Contacto</a>
-                </nav>
-            </div>
-        </div>
-        <div class="header__text">
-            <h2 class="no-margin">Blog de JRaul con consejos e informacion.</h2>
-            <p class="no-margin">Aprende de los expertos</p>
-        </div>
+        <nav class="nav">
+          <a href="../index.html" class="logo nav-link">BlogDeJRaul</a>
+          <button class="nav-toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav-menu">
+            <li class="nav-menu-item">
+              <a href="../index.html" class="nav-menu-link nav-link">Inicio</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="../nosotros.html" class="nav-menu-link nav-link">Acerca de mi</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="../proyects.html" class="nav-menu-link nav-link">Proyectos</a>
+            </li>
+            <li class="nav-menu-item">
+              <a href="../contacto.html" class="nav-menu-link nav-link nav-menu-link_active">Contactame</a>
+            </li>
+          </ul>
+        </nav>
     </header>
 
     <div class="container">
@@ -45,6 +53,16 @@
             <div class="python-content__element">
                 <h3>Algoritmo de busqueda de un elemento en una lista</h3>
                 <a target="_blanck" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                    </svg>
+                </a>
+            </div>
+            <!--First element-->
+            <div class="python-content__element">
+                <h3>Rock/Paper/Scissors</h3>
+                <a target="_blanck" href="https://github.com/jrauljperez02/cv_Python/blob/main/1-rock_paper_scissors.py">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
@@ -100,7 +118,16 @@
                 </a>
             </div>
             <div class="python-content__element">
-                <h3>GUI - Turle Race - OOP</h3>
+                <h3>GUI - Snake Game - OOP</h3>
+                <a target="_blanck" href="https://github.com/jrauljperez02/cv_Python/tree/main/6-Turtle_race">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                    </svg>
+                </a>
+            </div>
+            <div class="python-content__element">
+                <h3>GUI - Pong Game - OOP</h3>
                 <a target="_blanck" href="https://github.com/jrauljperez02/cv_Python/tree/main/6-Turtle_race">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
